@@ -13,8 +13,12 @@ An end-to-end Azure Data Engineering project that ingests retail sales data, pro
 - Power BI
 
 ## Architecture
-CSV Files
+
+Medalion Architechture
+Source datasets from multiple sources ( SQL DB, Manual Excel files and API call)
     ↓
+    ADF(Data Orchestration)
+    ↓   
 ADLS (Raw)
     ↓
 Databricks (Bronze)
@@ -22,6 +26,8 @@ Databricks (Bronze)
 Databricks (Silver)
     ↓
 Databricks (Gold)
+    ↓
+Delta lake
     ↓
 Power BI
 
