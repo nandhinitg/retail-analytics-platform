@@ -5,7 +5,7 @@ spark = SparkSession.builder.appName(
 ).getOrCreate()
 
 df = spark.read.csv(
-    "data/historical_data.csv",
+    "data/historical_data_retail.csv",
     header=True,
     inferSchema=True
 )
